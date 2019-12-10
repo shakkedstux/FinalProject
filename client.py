@@ -4,6 +4,7 @@
 import socket
 from PIL import ImageGrab
 
+#test
 
 IP = '127.0.0.1' # '0.0.0.0' not working
 PORT = 8820
