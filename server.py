@@ -2,11 +2,12 @@
 #   get his screen - "The Visitor" - (server)
 
 
+# hello
 import socket
 
 IP = "0.0.0.0"
 PORT = 8820
-
+#qqqqqqqqqqqqqqqqqqqqqqq
 
 def main():
     # connection
