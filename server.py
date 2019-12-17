@@ -17,17 +17,23 @@ def main():
     friend, address = server_socket.accept()
     
     # receiving and saving image 1 piece at a time
-    piece_size = 4096 # 4 KiB
+    piece_size = 2000000 # 4 KiB
 
     with open("copy.jpg", "wb") as out_file:
-        while True:
-            piece = friend.recv(piece_size)
-
-            if piece == "":
-                break # end of file
-
-            out_file.write(piece)
+        piece = friend.recv(piece_size)
+        out_file.write(piece)
 
 
 if __name__ == '__main__':
     main()
+
+
+
+# what i did today: 
+# git - download all the files. 
+# installing Pillow(PIL)
+# changing code 'piece_size' to 2 million instead 4096 - so now it works. needs to be changed.. 
+# openning 2 files for doing sql homework.
+# open another file for creating db and tables
+# open db and tables file is working
+# tgre2

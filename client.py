@@ -19,14 +19,11 @@ def main():
     im = ImageGrab.grab()
     im.save('screenshot.jpg')    print("screenshot saved")
     # send the image 1 piece at a time
-    piece_size = 4096 # 4 KiB
+    piece_size = 2000000 # 4 KiB
 
     with open("screenshot.jpg", "rb") as in_file:
-        while True:
-            piece = in_file.read(piece_size)
-            if piece == "":
-                break # end of file
-            sockt.send(piece)
+        piece = in_file.read(piece_size)
+        sockt.send(piece)
 
 
 if __name__ == '__main__':
